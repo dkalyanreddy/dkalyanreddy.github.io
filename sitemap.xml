@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kalyanreddy.com/posts/istio3/</loc>
+    <lastmod>2018-08-14T16:40:48+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kalyanreddy.com/posts/aws2/</loc>
     <lastmod>2018-08-14T13:17:57+05:30</lastmod>
   </url>
@@ -74,7 +79,7 @@
   
   <url>
     <loc>https://kalyanreddy.com/</loc>
-    <lastmod>2018-08-14T13:17:57+05:30</lastmod>
+    <lastmod>2018-08-14T16:40:48+05:30</lastmod>
   </url>
   
   <url>
@@ -82,13 +87,13 @@
   </url>
   
   <url>
-    <loc>https://kalyanreddy.com/categories/aws/</loc>
+    <loc>https://kalyanreddy.com/tags/aws/</loc>
     <lastmod>2018-08-14T13:17:57+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kalyanreddy.com/tags/aws/</loc>
+    <loc>https://kalyanreddy.com/categories/aws/</loc>
     <lastmod>2018-08-14T13:17:57+05:30</lastmod>
     <priority>0</priority>
   </url>
@@ -100,25 +105,25 @@
   </url>
   
   <url>
-    <loc>https://kalyanreddy.com/categories/istio/</loc>
-    <lastmod>2018-08-14T13:05:21+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://kalyanreddy.com/tags/istio/</loc>
-    <lastmod>2018-08-14T13:05:21+05:30</lastmod>
+    <lastmod>2018-08-14T16:40:48+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kalyanreddy.com/categories/kubernetes/</loc>
-    <lastmod>2018-08-14T12:38:38+05:30</lastmod>
+    <loc>https://kalyanreddy.com/categories/istio/</loc>
+    <lastmod>2018-08-14T16:40:48+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kalyanreddy.com/tags/kubernetes/</loc>
+    <lastmod>2018-08-14T12:38:38+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kalyanreddy.com/categories/kubernetes/</loc>
     <lastmod>2018-08-14T12:38:38+05:30</lastmod>
     <priority>0</priority>
   </url>
@@ -130,7 +135,7 @@
   
   <url>
     <loc>https://kalyanreddy.com/posts/</loc>
-    <lastmod>2018-08-14T13:17:57+05:30</lastmod>
+    <lastmod>2018-08-14T16:40:48+05:30</lastmod>
     <priority>0</priority>
   </url>
   
