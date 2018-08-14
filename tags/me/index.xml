@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Me on Kalyan Reddy</title>
+    <link>https://kalyanreddy.com/tags/me/</link>
+    <description>Recent content in Me on Kalyan Reddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://kalyanreddy.com/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About me</title>
+      <link>https://kalyanreddy.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kalyanreddy.com/about/</guid>
+      <description>Info  Kalyan Reddy Hyderabad, India Career  Mphasis ADP ZetaOpt   Kalyan Reddy&amp;rsquo;s Profile Kalyan Reddy is an Analyst and an Architect at ZetaOpt . Kalyan has 12 years of IT experience in a variety of verticals, such as insurance, manufacturing and payroll. His key areas of expertise are in architecture, design, managing and implementing business solutions at medium to large size organizations using emerging technologies.
+Contact  Email: kalyanreddy@kalyanreddy.</description>
+    </item>
+    
+  </channel>
+</rss>

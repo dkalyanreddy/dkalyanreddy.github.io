@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title> Aws2 - Kalyan Reddy&#39;s Blog|Analyst, Architect|kalyanreddy.com</title>
+  <meta name="description" content="Kalyan Reddy&#39;s Blog|Analyst, Architect|kalyanreddy.com" />
+  <meta property="og:title" content="Aws2" />
+  <meta name="twitter:title" content="Aws2" />
+  <meta name="description" content="Pods What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum">
+  <meta property="og:description" content="Pods What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum">
+  <meta name="twitter:description" content="Pods What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown …">
+  <meta name="author" content="Kalyan Reddy"/>
+  <link href='https://res.cloudinary.com/kalyanreddy/image/upload/v1534147866/kalyan-blog/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcly1ft1oje0atgj31kw1kzk1j.jpg" />
+  <meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tKfTcly1ft1oje0atgj31kw1kzk1j.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@kalyanreddy" />
+  <meta name="twitter:creator" content="@kalyanreddy" />
+  <meta property="og:url" content="https://kalyanreddy.com/posts/aws2/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Kalyan Reddy" />
+
+  <meta name="generator" content="Hugo 0.45.1" />
+  <link rel="canonical" href="https://kalyanreddy.com/posts/aws2/" />
+  <link rel="alternate" href="https://kalyanreddy.com/index.xml" type="application/rss+xml" title="Kalyan Reddy">
+  <script src="https://res.cloudinary.com/kalyanreddy/raw/upload/v1534160729/kalyan-blog/staticfiles/js/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="https://kalyanreddy.com/css/main.css" />
+  <link rel="stylesheet" href="https://kalyanreddy.com/css/search.css" />
+  
+  
+
+<meta name="baidu-site-verification" content="g8IYR9SNLF" />
+
+
+
+<link rel="stylesheet" href="https://kalyanreddy.com/css/prism.css" />
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://kalyanreddy.com/">Kalyan Reddy</a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                
+                  <a href="https://kalyanreddy.com/categories/kubernetes">kubernetes</a>
+                
+                
+                  <a href="https://kalyanreddy.com/categories/istio">Istio</a>
+                
+                
+                  <a href="https://kalyanreddy.com/categories/aws">AWS</a>
+                
+                
+                  <a href="https://kalyanreddy.com/tags">Tags</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/about">About</a>
+              
+              
+            </li>
+          
+        
+
+        
+
+        
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+          
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Kalyan Reddy" href="https://kalyanreddy.com/">
+            <img class="avatar-img" src="https://res.cloudinary.com/kalyanreddy/image/upload/v1534153201/kalyan-blog/kalyan2.jpg" alt="Kalyan Reddy" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search kalyanreddy.com</h4>
+        </div>
+        <div class="modal-body">
+            
+<div class="aa-input-container" id="aa-input-container">
+    <input type="search" id="aa-search-input" class="aa-input-search" placeholder="Search for titles or URIs..." name="search" autocomplete="off" autofocus="autofocus"/>
+    <svg class="aa-input-icon" viewBox="654 -372 1664 1664">
+        <path d="M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5  C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5  C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342  c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332  s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225  S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z" />
+    </svg>
+</div>
+
+
+
+<script src="https://res.cloudinary.com/kalyanreddy/raw/upload/v1534160729/kalyan-blog/staticfiles/js/algoliasearch.min.js"></script>
+<script src="https://res.cloudinary.com/kalyanreddy/raw/upload/v1534160729/kalyan-blog/staticfiles/js/autocomplete.min.js"></script>
+
+<script>
+var client = algoliasearch("QTJ6FX8RSW", "7d7eba503e8260e115e3f9a6a716baaf");
+var index = client.initIndex('kalyan-blog');
+
+autocomplete('#aa-search-input',
+{ hint: false}, {
+    source: autocomplete.sources.hits(index, {hitsPerPage: 5}),
+    
+    displayKey: 'name',
+    
+    templates: {
+        
+        suggestion: function(suggestion) {
+            
+            return '<span>' + '<a href="/' + suggestion.uri+ '">' +
+            suggestion._highlightResult.title.value + '</a></span>';
+        }
+    }
+});
+</script>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA2.jpg" data-img-desc-1="Brooklyn Bridge|Apr 5,2018"></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-md-offset-0">
+                
+                <div class="post-heading">
+                
+                  
+                     <h1>Aws2</h1>
+                     
+                    <span class="post-meta">
+  
+  Posted on August 14, 2018
+  
+  
+</span>
+
+
+                    
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-md-offset-0">
+            <div class="posts-heading">
+                <h1 align="center">Aws2</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main" itemscope itemtype="http://schema.org/Article">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            
+            
+            
+<div>
+    <section id="datecount">
+        <h4 id="date"> Tue Aug 14, 2018</h4>
+    </section>
+    <h5 id="wc">1900 Words|Read in about 9 Min</h5>
+    <h5 id="tags">Tags: 
+        
+        <a href="https://kalyanreddy.com/tags/aws/">aws</a> &nbsp;
+    </h5>
+</div>
+
+            
+            <article role="main" class="blog-post" itemprop="articleBody" id="content">
+                
+
+                
+
+<h3 id="pods">Pods</h3>
+
+<p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &lsquo;Content here, content here&rsquo;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for &lsquo;lorem ipsum&rsquo; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum vulputate leo nec nulla maximus, elementum dignissim lacus porttitor. Aliquam pharetra placerat eros, non gravida nisi tincidunt quis. Nunc id pulvinar nibh. Sed ac gravida nunc, mollis congue neque. Donec et pellentesque urna. Morbi sem massa, maximus malesuada porta vitae, congue vel justo. Sed et quam sed quam pharetra rhoncus et non urna.</p>
+
+<p>Sed sit amet magna eget nunc vehicula faucibus non laoreet diam. Cras pellentesque diam quis libero molestie, vel scelerisque enim tristique. Nulla nec gravida orci. Nulla sit amet magna lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam lacus leo, pellentesque at porta et, consectetur vitae dolor. Pellentesque ac luctus augue. Nunc a neque et odio aliquet euismod vitae in justo. Nulla id consequat ex, quis pulvinar nisi. In porta tincidunt maximus.</p>
+
+<p>Morbi scelerisque enim tellus, id varius elit volutpat eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ut nisl a nulla egestas gravida. Nulla vel tellus nec sem tempor placerat. Nam aliquet orci vel augue sagittis sagittis. In magna enim, mattis eget congue vel, tincidunt laoreet lectus. Proin bibendum vel leo sed faucibus. Proin facilisis vulputate tellus non varius. Nunc et felis erat.</p>
+
+<p>Sed id sodales ipsum. Etiam eget suscipit est. Curabitur pharetra laoreet ex in varius. Vestibulum a tellus pulvinar augue luctus venenatis quis et turpis. Praesent malesuada, nibh ac viverra rutrum, dolor lacus consequat sapien, quis interdum velit mauris vitae elit. In hac habitasse platea dictumst. Aenean consequat dolor a porttitor egestas. Nunc ultrices convallis eros, quis suscipit lorem fermentum id. Vivamus facilisis porta lectus quis mollis. Curabitur ex neque, vestibulum lacinia consequat et, tristique non urna. Curabitur consequat, lacus vitae fermentum molestie, nunc massa faucibus dolor, quis elementum massa justo sit amet mauris. Maecenas a tortor vel enim semper tempor a et nibh. Integer porttitor metus non erat elementum congue. Morbi vitae lacus ut mauris interdum facilisis.</p>
+
+<p>Sed turpis tortor, egestas ut imperdiet et, euismod eget massa. Morbi euismod ultrices gravida. Nullam consectetur gravida felis id efficitur. Curabitur tincidunt lectus nibh, et faucibus felis vehicula mattis. Proin gravida, enim sit amet tempus feugiat, ligula est finibus mi, a viverra enim diam ac elit. Morbi vel justo non tortor mattis condimentum ut at dui. Cras sodales nunc velit. Nulla finibus feugiat augue, ut tempus ipsum tincidunt a. Nulla quam metus, efficitur a convallis ac, luctus vel nulla. Etiam sed lorem feugiat, eleifend orci at, malesuada mi. Nulla egestas odio in urna blandit sodales. Fusce sollicitudin libero justo, eu tristique ligula placerat non. Duis vitae velit eu est dictum ullamcorper et quis ipsum. Etiam sed finibus arcu. Maecenas accumsan volutpat laoreet. Donec rhoncus venenatis vehicula.</p>
+
+<p>Nam semper ipsum laoreet, pharetra felis sed, facilisis lacus. Praesent leo ipsum, condimentum fringilla lorem id, condimentum eleifend augue. Sed malesuada ex et lorem interdum, a posuere erat porta. Vestibulum id tellus quis sem porttitor finibus. Praesent et lobortis tortor. Mauris lacinia dui quam, vitae efficitur velit vestibulum id. Donec vitae metus ipsum. Suspendisse potenti. Maecenas feugiat, elit quis feugiat fringilla, eros ipsum imperdiet libero, quis porta augue ante non mauris. Proin id mi sit amet mi elementum consectetur nec sit amet dolor.</p>
+
+<p>Ut accumsan sagittis magna, eu luctus quam ullamcorper nec. Nulla vel efficitur enim. Aliquam nec dapibus libero. Donec feugiat libero quis mi molestie faucibus eu et eros. Vivamus semper tellus in pulvinar accumsan. Suspendisse euismod massa sed dolor lacinia pellentesque. Nam vitae purus quis sem porttitor condimentum. Aenean in felis ut augue ultricies imperdiet. Vestibulum cursus, nulla eu aliquet ultrices, mauris arcu laoreet orci, at sodales nisl risus vel ipsum. Curabitur sed dui nulla. In hac habitasse platea dictumst.</p>
+
+<p>Nullam facilisis metus vel mi ultrices, et pharetra nunc cursus. Nulla facilisi. Maecenas et porta turpis, et eleifend diam. In ligula diam, tincidunt eget elit id, luctus venenatis lorem. Proin mollis convallis vehicula. Vestibulum fringilla leo quis leo imperdiet, placerat dapibus justo condimentum. Sed congue consequat purus vitae iaculis. Etiam at massa molestie, malesuada elit id, aliquam justo. Cras mattis metus eget odio hendrerit venenatis. Duis pretium tortor mauris, vel consequat dui feugiat varius. Phasellus pulvinar nibh ut eros faucibus, posuere maximus neque pellentesque. Nullam a finibus felis. Suspendisse et porttitor mauris. Aliquam posuere urna a sem suscipit vulputate. Integer consequat semper suscipit.</p>
+
+<h3 id="services">Services</h3>
+
+<p>Mauris mattis dolor vitae magna volutpat, nec pellentesque ex sodales. Donec turpis lacus, interdum imperdiet varius et, tincidunt id diam. Pellentesque sed eros a eros posuere lobortis mattis sed elit. Aliquam venenatis ligula in dolor tincidunt bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum sed nisl molestie, feugiat nulla a, imperdiet orci. Sed facilisis sem quis ligula blandit gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur at massa et odio pharetra maximus. Morbi et condimentum lacus, in ullamcorper massa. Morbi ut nibh mattis, fermentum ex in, maximus erat. Phasellus id dui dapibus, finibus purus vitae, feugiat lacus.</p>
+
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed finibus nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin vitae nulla quis orci varius placerat vitae et dolor. Nulla rhoncus rhoncus augue, in venenatis augue cursus in. Aliquam sed sem facilisis, euismod massa a, lobortis velit. Vestibulum vulputate luctus eros, sed ornare sem tincidunt vel. Nunc vulputate, lectus ac commodo lobortis, quam odio mollis lacus, nec commodo elit ex sed elit. Nulla sed euismod elit.</p>
+
+<p>Duis imperdiet mi id mi sagittis vehicula. Nullam et diam tellus. Donec finibus ac arcu ac accumsan. Vivamus convallis semper nisl, id commodo tortor varius ornare. Pellentesque eget neque viverra, ullamcorper velit a, scelerisque lectus. Sed maximus at nisl eget sagittis. Proin vulputate at odio ornare lacinia. Nullam faucibus semper massa nec volutpat. Integer sollicitudin interdum turpis, non blandit nisi tincidunt tempus. Donec ac massa a mi laoreet euismod. Vivamus eget velit eros. Curabitur arcu leo, congue sit amet finibus id, tempus ut ipsum. Sed lacus nisl, mollis ut iaculis id, vulputate vel est. In sit amet placerat libero. Nulla quis est dui.</p>
+
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas venenatis hendrerit justo, sed finibus tortor auctor a. Donec tristique vehicula nisl, vitae mattis mauris accumsan eu. Nulla facilisi. Quisque sit amet erat sit amet diam porttitor euismod. Nam tortor justo, commodo eu faucibus quis, mollis at justo. Fusce iaculis leo sit amet tempus scelerisque. Praesent pellentesque maximus imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed lorem orci, ullamcorper at semper facilisis, imperdiet in nisl. Suspendisse non auctor elit, sed blandit turpis. In hac habitasse platea dictumst. Nulla vehicula turpis a diam aliquam, sit amet dignissim est porttitor. Vestibulum laoreet, velit pellentesque lobortis condimentum, mi nisi lacinia purus, at cursus ante nunc eget mi.</p>
+
+<p>Quisque at convallis sem, gravida bibendum est. Vivamus vehicula aliquet tortor quis bibendum. Integer faucibus pellentesque sem vel sagittis. Vivamus urna risus, tempor vel nunc ut, luctus ornare massa. Morbi tempus, mi sollicitudin ullamcorper porta, orci turpis volutpat leo, eget cursus purus velit vel nunc. Nulla convallis nulla a bibendum porta. Nunc accumsan justo sed nisl porttitor sollicitudin. Praesent vel sapien eu tortor laoreet hendrerit. Morbi viverra neque in quam ornare volutpat. Phasellus quis libero at nulla efficitur finibus nec at lorem. Nunc a dapibus nibh. Nullam suscipit sodales quam in aliquam. Sed ac tincidunt nulla. Duis ultricies nibh volutpat vulputate vulputate. Aliquam sodales tellus ut auctor lacinia.</p>
+
+<p>Sed molestie tortor nec sem tempor, in interdum ante tincidunt. Fusce lobortis, neque volutpat suscipit euismod, arcu est varius lorem, vel rhoncus turpis sem lobortis mauris. Sed ut justo elementum, venenatis nunc sed, vulputate mauris. Nunc condimentum libero ipsum, ac semper odio luctus a. Integer dui libero, mollis pulvinar erat non, mattis maximus risus. Cras eget enim vitae arcu aliquam tristique. Nulla pharetra ornare sollicitudin. Phasellus nec posuere enim, at euismod sapien. Morbi et lobortis eros. Mauris eu metus eu risus venenatis facilisis ut id metus.</p>
+
+<p>Nulla non euismod tortor, vitae maximus leo. Cras faucibus rhoncus velit eu blandit. Donec diam sem, sollicitudin vitae mauris eu, egestas ultrices metus. Nulla urna dolor, tempus eget tellus sed, molestie placerat massa. Curabitur iaculis, lacus quis gravida convallis, eros tortor sollicitudin sapien, ac laoreet mauris tellus eget odio. Sed quis purus augue. Duis et felis fringilla, facilisis quam sed, malesuada felis.</p>
+
+<p>Integer nulla nisi, mollis vel mi semper, accumsan malesuada ligula. Mauris hendrerit libero neque, vitae fermentum justo viverra sed. Sed gravida luctus scelerisque. Mauris leo neque, feugiat id mauris at, suscipit tempus lorem. Pellentesque efficitur, augue nec sollicitudin tincidunt, lacus erat congue nibh, non porttitor purus sapien eget risus. Curabitur quis enim posuere, facilisis mi in, aliquet ipsum. Aliquam ullamcorper, velit non imperdiet condimentum, dolor libero dictum sapien, nec finibus ligula risus pharetra dui. In porta ultrices leo, non volutpat sapien auctor et. Curabitur auctor, leo sit amet elementum porta, lacus mauris mattis ipsum, et semper risus purus sed ligula.</p>
+
+<p>In pulvinar quam nibh, sed pellentesque lorem porta eu. Phasellus pharetra pretium sapien, nec imperdiet risus vulputate quis. Morbi consequat mi ut felis efficitur, eu finibus eros placerat. Mauris ultricies dictum nisl nec efficitur. Aenean fringilla lorem diam, quis sagittis sem iaculis id. Fusce nunc odio, porttitor et risus nec, venenatis bibendum sapien. Aenean sit amet lacus mollis, varius metus quis, fermentum est. Proin finibus elit sed metus tempus, eu condimentum felis dapibus. Nam placerat mauris mauris, vitae tempus nunc lacinia a. Aliquam luctus nisl nec mauris scelerisque convallis. Vivamus tellus augue, vulputate non fringilla in, aliquet non purus. Nam ornare tellus sollicitudin mi lobortis, sit amet laoreet purus congue. Proin bibendum sem ac sollicitudin dictum. Maecenas bibendum laoreet leo, et egestas lacus sollicitudin eu. Quisque egestas mauris non sapien iaculis, quis commodo nunc eleifend. Sed eget sapien sed quam feugiat convallis in in augue.</p>
+
+            </article>
+
+            <ul class="pager blog-pager">
+                
+                <li class="previous">
+                    <a href="https://kalyanreddy.com/posts/aws1/" data-toggle="tooltip" data-placement="top" title="Aws1">&larr; Previous Post</a>
+                </li>
+                 
+            </ul>
+            
+            <div>
+                 
+                <h2>See Also</h2>
+                <ul>
+                    
+                    <li><a href="/posts/aws1/">Aws1</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            
+            
+            
+<div>
+    <section id="datecount">
+        <h4 id="date"> Tue Aug 14, 2018</h4>
+    </section>
+    <h5 id="wc">1900 Words|Read in about 9 Min</h5>
+    <h5 id="tags">Tags: 
+        
+        <a href="https://kalyanreddy.com/tags/aws/">aws</a> &nbsp;
+    </h5>
+</div>
+
+            
+            </div>
+            
+            
+        </div>
+    </div>
+    </section>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+
+          
+              <li>
+                <a href="https://twitter.com/kalyanreddy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/dkalyanreddy" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://kalyanreddy.com/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+        &copy;2017-2018
+          
+            
+              <a href="https://kalyanreddy.com">Kalyan Reddy</a>
+            
+          
+          
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://kalyanreddy.com/">Kalyan Reddy</a>
+          
+        </p>
+			
+        
+		
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://res.cloudinary.com/kalyanreddy/raw/upload/v1534160729/kalyan-blog/staticfiles/js/bootstrap.min.js"></script>
+<script src="https://res.cloudinary.com/kalyanreddy/raw/upload/v1534160729/kalyan-blog/staticfiles/js/photoswipe-ui-default.min.js"></script>
+<script src="https://res.cloudinary.com/kalyanreddy/raw/upload/v1534160729/kalyan-blog/staticfiles/js/photoswipe.min.js"></script>
+<script src="https://res.cloudinary.com/kalyanreddy/raw/upload/v1534160729/kalyan-blog/staticfiles/js/auto-render.min.js"></script>
+<script src="https://res.cloudinary.com/kalyanreddy/raw/upload/v1534160729/kalyan-blog/staticfiles/js/main.js"></script>
+<script src="https://res.cloudinary.com/kalyanreddy/raw/upload/v1534160729/kalyan-blog/staticfiles/js/prism.js"></script>
+<script src="https://res.cloudinary.com/kalyanreddy/raw/upload/v1534160729/kalyan-blog/staticfiles/js/katex.min.js"></script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+
+
+  </body>
+</html>
+
